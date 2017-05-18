@@ -19,6 +19,8 @@ rm -rf ../${SITE_PATH}
 git clone https://${MY_TOKEN}@github.com/danieldatri/danieldatri.github.io ../${SITE_PATH}
 
 # copy the site into _site folder to master
+rm -fr _site/.travis.yml
+rm -frR _site/.script
 cp -R _site/* ../${SITE_PATH}
 
 #Push changes to master 
