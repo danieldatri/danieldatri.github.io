@@ -16,7 +16,7 @@ SITE_PATH="danieldatri.github.io.master"
 rm -rf ../${SITE_PATH}
 
 #clone `master' branch of the repository using encrypted GH_TOKEN for authentification
-git clone https://${MY_TOKEN}github.com/danieldatri/danieldatri.github.io ../${SITE_PATH}
+git clone https://${MY_TOKEN}@github.com/danieldatri/danieldatri.github.io ../${SITE_PATH}
 
 # copy the site into _site folder to master
 cp -R _site/* ../${SITE_PATH}
