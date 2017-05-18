@@ -4,8 +4,10 @@ rvm:
 env:
   global:
     secure: hoNLO0AcVGlFyNVkzKAcht67XRT8R6HjqCF5/sNMVw1WeicktKNo1CnyHwLPf+VYSkCyjxl4XanUN10fVo59vm2Xgd0na/yHJOZTFMMofixR9rsL1PHeRkCVyMIM2jGM9NioVSxicCccKD4Rr3hXYIjLAOfc/CXOxigZOQp0pqVjrpvOpL7Plh1++AARt32mvmS91SaDs6bMLsprknVibcgLBAUg1c0ifWnrCq+us60Y3MMm/JNZykZ3mjqU2kl3v6PCMc5cbgrhzU/qm2D+Et9SE3/QqPMNRY79TZi9v57h5Y2t0lWAQ+e5AqHfTfPDu5aFOlpIOexu4RVO/7lmIm8sE9hd3OSqEaHGKVdCTCLkDiqPnPNP26tApaV0ILV/K8nceSelF7m9nJGXKWT2Gov5vROoXIPNVTzqXJrSLblfRbNIyKVDL1+rksxMOwNZtP6OTNHc5EhuMcVRtri2zusd3c5Hfo/C5F/PN4fiP0c9QKc8On6xr2+4nCljw57+GU9X9+N3oLo/xSLueNF1kRhLKIQGS5A+E0QY+AUM0nXkjnw+KTg24yC5DALvAQjNH4lfNdtTyJlNyAKrtr+ULbZBO1dNIGOnbKscWWKs8YwJMJCHDHZkubxKIZTUX5th+pdRUBMPnmTaSos3ULzZL0EefQuXCHWNYW/memdVb0o=
+before_script:
+ - chmod +x ./build.sh
 
-script: ./build.sh
+script: "./build.sh"
 branches:
   only:
   - site
