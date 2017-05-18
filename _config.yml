@@ -27,6 +27,4 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+exclude: ['Gemfile.lock', 'Gemfile', '*.sh', '*.iml', '_config.yml','.travis.yml']
